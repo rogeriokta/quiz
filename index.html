@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Quiz | FIP 24</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Botão Iniciar -->
+    <div class="start_btn"><button>Iniciar Quiz</button></div>
+
+    <!-- Caixa de informações -->
+    <div class="info_box">
+        <div class="info-title"><span> Algumas regras deste quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Você tem <span>15 segundos</span> para responder a questão.</div>
+            <div class="info">2. Depois de selecionar sua resposta, ela não poderá ser desfeita.</div>
+            <div class="info">3. Você não pode selecionar nenhuma opção quando o tempo acabar.</div>
+            <div class="info">4. Você não pode sair do Quiz enquanto estiver jogando.</div>
+            <div class="info">5. Você receberá pontos com base em suas respostas corretas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Sair</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Caixa do Quiz -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Timer Quiz | FIP 24</div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo:</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Aqui será inserida uma pergunta via JavaScript -->
+            </div>
+            <div class="option_list">
+                <!--  Aqui serão inseridas opções via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Rodapê da caixa do Quiz -->
+        <footer>
+            <div class="total_que">
+                <!-- Aqui será inserido o número de contagem de perguntas via JavaScript -->
+            </div>
+            <button class="next_btn">Próxima</button>
+        </footer>
+    </div>
+
+    <!-- Caixa de resultado -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou o quiz!</div>
+        <div class="score_text">
+            <!-- Aqui será inserido o resultado da pontuação via JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Reiniciar</button>
+            <button class="quit">Sair</button>
+        </div>
+    </div>
+
+    <!-- Dentro deste arquivo JavaScript estão apenas perguntas e opções -->
+    <script src="js/questions.js"></script>
+
+    <!-- Dentro deste arquivo JavaScript estão todos os códigos do questionário -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
